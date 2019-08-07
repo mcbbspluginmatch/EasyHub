@@ -25,6 +25,7 @@ public class DetectPluginListener implements Listener {
         instance = plugin;
 
         checkPluginsCommands = instance.getConfig().getStringList("antiPluginDetect.checkCommands");
+        // 丢人莫仕 在线 replace —— 754503921
         message = instance.getConfig().getString("antiPluginDetect.message").replaceAll("&", "§");
     }
 
